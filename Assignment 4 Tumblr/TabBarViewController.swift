@@ -21,6 +21,11 @@ class TabBarViewController: UIViewController {
     var viewControllers: [UIViewController]!
     var selectedIndex: Int = 0
     
+    @IBOutlet weak var tooltipView: UIImageView!
+    var toolTipViewOriginalCenter: CGPoint!
+    var toolTipOffset: CGFloat!
+    
+ 
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -36,6 +41,18 @@ class TabBarViewController: UIViewController {
         
         buttons[selectedIndex].selected = true
         didTapButton(buttons[selectedIndex])
+        
+        toolTipViewOriginalCenter = tooltipView.center
+        toolTipOffset = 10
+        
+        UIView.animateWithDuration(2.0, delay:0, options: [.Repeat, .Autoreverse], animations: {
+            
+            self.tooltipView.center = CGPoint(x: self.tooltipView.center.x, y: self.tooltipView.center.y + self.toolTipOffset)
+            }, completion: nil)
+        
+        
+        
+        
     }
     
     @IBAction func didTapButton(sender: UIButton) {
@@ -58,6 +75,12 @@ class TabBarViewController: UIViewController {
         contentView.addSubview(vc.view)
         
         vc.didMoveToParentViewController(self)
+        
+        if selectedIndex == 1 {
+            tooltipView.alpha = 0
+            
+        } else {
+        }
         
         
         

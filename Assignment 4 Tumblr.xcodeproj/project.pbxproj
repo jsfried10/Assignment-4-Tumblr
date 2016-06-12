@@ -21,6 +21,9 @@
 		4845802A1D0A61E700EE06A1 /* ComposeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 484580291D0A61E700EE06A1 /* ComposeViewController.swift */; };
 		4845802C1D0A62DA00EE06A1 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845802B1D0A62DA00EE06A1 /* AccountViewController.swift */; };
 		4845802E1D0A62FD00EE06A1 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4845802D1D0A62FD00EE06A1 /* TrendingViewController.swift */; };
+		488821B51D0DBB5F00E2CAC5 /* LogInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 488821B41D0DBB5F00E2CAC5 /* LogInViewController.swift */; };
+		48B7752A1D0D1DF400E30CCD /* BaseTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B775281D0D1DF400E30CCD /* BaseTransition.swift */; };
+		48B7752B1D0D1DF400E30CCD /* FadeTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B775291D0D1DF400E30CCD /* FadeTransition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +64,9 @@
 		484580291D0A61E700EE06A1 /* ComposeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ComposeViewController.swift; sourceTree = "<group>"; };
 		4845802B1D0A62DA00EE06A1 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		4845802D1D0A62FD00EE06A1 /* TrendingViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		488821B41D0DBB5F00E2CAC5 /* LogInViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogInViewController.swift; sourceTree = "<group>"; };
+		48B775281D0D1DF400E30CCD /* BaseTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseTransition.swift; sourceTree = "<group>"; };
+		48B775291D0D1DF400E30CCD /* FadeTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FadeTransition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +97,7 @@
 		48457FE71D0A5C4F00EE06A1 = {
 			isa = PBXGroup;
 			children = (
+				488821B41D0DBB5F00E2CAC5 /* LogInViewController.swift */,
 				48457FF21D0A5C4F00EE06A1 /* Assignment 4 Tumblr */,
 				484580071D0A5C4F00EE06A1 /* Assignment 4 TumblrTests */,
 				484580121D0A5C4F00EE06A1 /* Assignment 4 TumblrUITests */,
@@ -124,6 +131,8 @@
 				48457FFA1D0A5C4F00EE06A1 /* Assets.xcassets */,
 				48457FFC1D0A5C4F00EE06A1 /* LaunchScreen.storyboard */,
 				48457FFF1D0A5C4F00EE06A1 /* Info.plist */,
+				48B775281D0D1DF400E30CCD /* BaseTransition.swift */,
+				48B775291D0D1DF400E30CCD /* FadeTransition.swift */,
 			);
 			path = "Assignment 4 Tumblr";
 			sourceTree = "<group>";
@@ -278,11 +287,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				484580281D0A61AF00EE06A1 /* SearchViewController.swift in Sources */,
+				48B7752A1D0D1DF400E30CCD /* BaseTransition.swift in Sources */,
 				48457FF61D0A5C4F00EE06A1 /* ViewController.swift in Sources */,
 				4845802C1D0A62DA00EE06A1 /* AccountViewController.swift in Sources */,
 				484580221D0A5C7200EE06A1 /* Common.swift in Sources */,
 				48457FF41D0A5C4F00EE06A1 /* AppDelegate.swift in Sources */,
+				48B7752B1D0D1DF400E30CCD /* FadeTransition.swift in Sources */,
 				484580261D0A60F800EE06A1 /* TabBarViewController.swift in Sources */,
+				488821B51D0DBB5F00E2CAC5 /* LogInViewController.swift in Sources */,
 				484580241D0A60DD00EE06A1 /* HomeViewController.swift in Sources */,
 				4845802A1D0A61E700EE06A1 /* ComposeViewController.swift in Sources */,
 				4845802E1D0A62FD00EE06A1 /* TrendingViewController.swift in Sources */,
@@ -512,6 +524,7 @@
 				4845801A1D0A5C4F00EE06A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4845801B1D0A5C4F00EE06A1 /* Build configuration list for PBXNativeTarget "Assignment 4 TumblrTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +533,7 @@
 				4845801D1D0A5C4F00EE06A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		4845801E1D0A5C4F00EE06A1 /* Build configuration list for PBXNativeTarget "Assignment 4 TumblrUITests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +542,7 @@
 				484580201D0A5C4F00EE06A1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
